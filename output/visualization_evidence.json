@@ -1,0 +1,40 @@
+{
+  "critique": [
+    {
+      "category": "unsupported claim",
+      "problem": "The title calims causation when with no support to the claim",
+      "repair": "Use a title that describes the data"
+    },
+    {
+      "category": "truncated baseline",
+      "problem": "The Y-axis starts at 76",
+      "repair": "Make the range between each value on the Y-axis larger and have it start at zero, or signify that you are skipping value"
+    },
+    {
+      "category": "missing unit",
+      "problem": "The Y-axis does not say what the measurement is",
+      "repair": "Add label to Y-axis to make it more descriptive"
+    },
+    {
+      "category": "color-only encoding",
+      "problem": "color-only encoding is not colorblind friendly",
+      "repair": "Use a label to make it clear which is home or center based"
+    },
+    {
+      "category": "distracting decoration",
+      "problem": "The grid pattern on the bars are unnecessary",
+      "repair": "Take out the grid pattern"
+    }
+  ],
+  "question": "How well did patients do on meeting their followup goal?",
+  "audience": "The people conducting the sessions can use this chart to see the progress of the patients",
+  "intended_claim": "More visits is correlated with a higher goal met percentage",
+  "y_measure": "Percentage of goal met",
+  "grain": "The row should represent the number of visits and one point will show the goal met percentage per visit",
+  "data_types": {
+    "program": "categorical",
+    "visit_number": "ordinal",
+    "goal_met_pct": "quantitative"
+  },
+  "text_alternative": "This is a line graph that describes the patients' exercise goals in regards to their followup visits. The followup viist number is on the x-axis and the percentage of exercise goal reached is on the y-axis. The gap at follow up visit 4 shows a significant increase in center-based patients. patients chose their program, so the gap does not show that one program causes more exercise, and each percentage covers only the patients seen at that visit, about 45 per program, so a 9-point gap could also come from chance or from who returned"
+}
